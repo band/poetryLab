@@ -137,7 +137,26 @@ git push --set-upstream origin main
   - set up testing having a subdirectory source code similar to
     `mwb.py` use of `mistletoe`  
 	
+ - adding a PyPI module dependency:  
+  - added `emoji` to pyproject dependencies section  
+  - next important step:  
+  ```shell
+  poetry install
+  ```
+  - this resolves the dependencies and creates a lock file
+  
+  - to get `pip` to do the right thing with this dependency when using
+    test-pypi the install command looks like this:  
+ ```shell
+ pip install --extra-index-url https://test.pypi.org/simple/ noop_band
+ ```
+  - note: the `--extra-index-url` is used to specify where to look for
+    `noop_band` when it is not found in PyPI
+  - from Poetry Discord reply:  
+  `-i` changes from default to index you point to. `--extra-index-url`
+  adds index to lookup
 
+  
 
 
 
