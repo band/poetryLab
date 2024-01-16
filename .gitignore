@@ -1,2 +1,2 @@
 # Poetry build distributions
-dist/
+poetry-noop/dist/*
