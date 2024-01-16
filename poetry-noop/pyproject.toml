@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "noop_band"
-version = "0.0.9"
+version = "0.1.0"
 description = ""
 authors = ["Bill Anderson <band@acm.org>"]
 readme = "README.md"
-homepage = "https://github.com/band/noop-package/noop"
+homepage = "https://github.com/band/poetryLab/poetry_noop"
 
 [tool.poetry.dependencies]
 python = "^3.8"

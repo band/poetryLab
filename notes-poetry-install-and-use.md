@@ -104,7 +104,11 @@ git init
 gh repo create --source=. --public
 ```
  - next steps: add a README.md and a license?; then push  
- 
+ - push req'd this last setting:  
+ ```shell
+git push --set-upstream origin main
+```
+
 
 ## 2024-01-15
  - finally have poetry building and publishing a package to `test.pypi.org`  
@@ -119,13 +123,20 @@ gh repo create --source=. --public
 	 - **TADA**: fixed the capitalization issue on testpypi:
 	   - first get the package name, directory name, and script entry
          point all in lower case; `poetry build` that version  
-	   - use `twine` to publish the package to testpypi; that package
-         can be `pip` installed and run using the entry point.  
+	   - use `twine` to publish the package to testpypi; then that package
+         can be `pip` installed and run using the specified entry point.  
 	   - (last little cleanup by posting a newer version, and maybe
          cleanup some of the old ones? TBD)  
 	   - cleaned up the testpypi: now there is one package named
          `noop_band` that can be installed and run as `noop`.
 
+## 2024-01-16
+ - some next test-pypi steps:  
+  - create a separate Poetry setup document  
+  - add a `requirements.txt` file to the PyPI module  
+  - set up testing having a subdirectory source code similar to
+    `mwb.py` use of `mistletoe`  
+	
 
 
 
