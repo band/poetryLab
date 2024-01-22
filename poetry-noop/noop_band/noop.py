@@ -6,7 +6,7 @@ import logging, os
 logging.basicConfig(level=os.environ.get('LOGLEVEL', 'INFO').upper())
 
 import emoji
-from emoji_format.emojiformat import EmojiFormat
+from noop_band.emoji_format.emojiformat import EmojiFormat
 
 import traceback
 
