@@ -4,11 +4,15 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "noop_band"
-version = "0.1.7"
+version = "0.1.12"
 description = ""
 authors = ["Bill Anderson <band@acm.org>"]
 readme = "README.md"
 homepage = "https://github.com/band/poetryLab/poetry_noop"
+packages = [
+    { include = "noop_band" },
+    { include = "noop_band/emoji_format" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
