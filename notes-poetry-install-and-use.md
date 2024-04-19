@@ -156,6 +156,14 @@ git push --set-upstream origin main
   `-i` changes from default to index you point to. `--extra-index-url`
   adds index to lookup
 
+## 2024-01-22  
+ - TODO: summarize the latest learning  
+ - but the key TIL piece is that module subdirectories *must* have an
+   `__init__.py` file in order for the full path import  
+   `from noop_band.emoji_format.emojiformat import EmojiFormat`  
+   statement to work when using `python` to run the program  
+   
+
   
 
 
