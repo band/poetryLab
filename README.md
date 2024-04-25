@@ -1,4 +1,4 @@
-# poetryLab: a place for experiiments with PyPI build and publish
+# poetryLab: a place for experiments with PyPI build and publish
 Poetry
 
  - As with any of my labs, we try to keep it organized.
